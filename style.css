@@ -95,6 +95,12 @@ body {
             letter-spacing: 0px;
             font-weight: bold;
         }
+
+
+        :hover {
+            color: #F4D04E;
+            cursor: pointer;
+        }
     }
 
 
