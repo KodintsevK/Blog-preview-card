@@ -7,34 +7,45 @@ body {
 }
 
 .wrapper {
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
     width: 100%;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .card {
-   height: 474px;
-   width: 336px;
+    min-height: 522px;
+    max-width: 384px;
+    /* height: 474px;
+    width: 336px; */
 
-   background-color: #FFFFFF;
+    background-color: #FFFFFF;
 
-   margin: auto;
+    /* margin: auto; */
 
-   border-radius: 20px;
+    border-radius: 20px;
 
-   padding-left: 24px;
-   padding-right: 24px;
-   padding-top: 24px;
-   padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
-   display: flex;
-   flex-direction: column;
-   
-   gap: 24px;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 24px;
 
-   box-shadow: 10px 10px 5px rgba(0, 0, 0, 1);
+    /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 1); */
+    box-shadow: 8px 8px 0px 0px #000;
+
+    p {
+        font-family: "Figtree", serif;
+        letter-spacing: 0px;
+        line-height: 150%;
+    }
 
 }
 
@@ -44,6 +55,7 @@ body {
     border-radius: 10px;
     
     img {
+        display: block;
         border-radius: 10px;
     }
 }
@@ -53,9 +65,11 @@ body {
     flex-direction: column;
     gap: 12px;
 
-    .category {
+    .category, .date, .title, .main_text {
         width: fit-content;
+    }
 
+    .category {
         padding-left: 12px;
         padding-right: 12px;
         padding-top: 4px;
@@ -67,36 +81,21 @@ body {
 
         p {
             align-items: center;
-            font-family: "Figtree", serif;
             font-size: 14px;
-            line-height: 150%;
-            letter-spacing: 0px;
             font-weight: bold;
         }
     }
 
-    .date {
-        width: fit-content;
-
-        p {
-            font-family: "Figtree", serif;
-            font-size: 14px;
-            line-height: 150%;
-            letter-spacing: 0px;
-        }
+    .date p{
+        font-size: 14px;
     }
 
     .title {
-        width: fit-content;
-
         p {
-            font-family: "Figtree", serif;
+            
             font-size: 24px;
-            line-height: 150%;
-            letter-spacing: 0px;
             font-weight: bold;
         }
-
 
         :hover {
             color: #F4D04E;
@@ -105,43 +104,32 @@ body {
     }
 
 
-    .main_text {
-        width: fit-content;
-
-        p {
-            font-family: "Figtree", serif;
-            font-size: 16px;
-            line-height: 150%;
-            letter-spacing: 0px;
-            color: #6B6B6B;
-        }
+    .main_text p{
+        font-size: 16px;
+        color: #6B6B6B;
     }
 
 }
 
 .author {
-
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 12px;
 
-
     .avatar {
         img {
+            display: block;
             width: 32px;
             height: 32px;
         }
     }
 
     .author_name {
-        text-align: center;
+        text-align: left;
 
         p {
-            font-family: "Figtree", serif;
             font-size: 14px;
-            line-height: 150%;
-            letter-spacing: 0px;
             font-weight: bold;
         }
     }
